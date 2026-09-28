@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            height: 500px;
+            width: 300px;
+            border: 5px solid black;
+            display: flex;
+            flex-direction: column-reverse;
+
+            justify-content: space-around;
+            align-items: center;
+            /* flex-wrap: nowrap; */
+
+
+        }
+
+        .items {
+            height: 1000px;
+            width: 100px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body style="text-align: center;">
+    <h1>Flexbox playground</h1>
+    <div id="container">
+        <div id="b1" class="items" style="flex-shrink: 0.8;">box1
+
+        </div>
+        <div id="b2" class="items" >box2
+
+        </div>
+        <div id="b3" class="items">box3
+
+        </div>
+        <div id="b4" class="items" style="flex-grow: 1;">box4
+
+        </div>
+        <div id="b5" class="items" style="flex-grow: 2;">box5
+
+        </div>
+    </div>
+
+</body>
+
+</html>

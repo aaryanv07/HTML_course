@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <!-- <style>
+        /* This consists of a selector property and the value of it. */
+        h1{ /* internal css*/
+            color: red;
+        }
+    </style> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Hello</h1>
+    <h2 style="color: rgb(20, 143, 168);">hey</h2><!-- inline css-->
+    <!--You can even change the color by clicking on the square box of the color palette.-->
+    <!-- If inline style and external style are targeting the same element, then internal CSS will get highest priority. -->
+
+    <p>hey</p>
+    <button>Click Me!</button>
+
+    <!-- Website is designed by a designer using Figma. 
+     Then it is handed over to the front-end developer, who creates the website using code. -->
+
+    <h1>Color Systems</h1>
+    <!-- Color systems (color:-RGB(Red,Green,Blue))-->
+    <!-- 255 is the maximum color (intensity)-->
+    <!--color:rgb(255,0,0)  red; 
+     color:rgb(0,255,0) Green ; -->
+    <!-- Red + green is equal to yellow. -->
+    <!--We can even give the color in HSL hex  -->
+
+    <!-- You can use the Google color picker for getting a customized color. -->
+
+    <!-- Hex (Hexadecimal) -->
+    <p>color: #FF0000; /* Red */</p>
+    <p>color: #00FF00; /* Green */</p>
+    <p>color: #0000FF; /* Blue */</p>
+    <p>color: #FFFF00; /* Yellow */</p>
+    <p>color: #FF00FF; /* Magenta */</p>
+    <p>color: #00FFFF; /* Cyan */</p>
+    <p>color: #FFFFFF; /* White */</p>
+    <p>color: #000000; /* Black */</p>
+    <!-- FF denotes 255 (Max Intensity) in Hex code. and 0 is denoted by 00 -->
+    <!--The range goes from 0 to 9 and after that in alphabet A to F, so combined it becomes 16-digit coding.   -->
+
+    <!-- Selectors
+  types of selectors are:
+   Universal selector *{ We have played on all elements.
+   } 
+   Element selector h1{
+   }
+   ID selector #myId{ unique name, Should be only used once for single element.
+   }
+   class selector .myClass{ Can be used for multiple elements.
+   }-->
+    <h1 id="one">hey</h1>
+    <h1 id="two">hey</h1>
+    <h1 class="myClass">hey</h1>
+
+    <h3>hey</h3>
+    <h4>hey</h4>
+    <h5>hey</h5>
+
+    <!-- Group selectors -->
+    <p>hey</p>
+    <button>Click Me!</button>
+
+    <!-- Text alignment -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro odio dolores nam minima magni possimus pariatur
+        officiis provident molestiae sequi vero quo, repellat vel, nostrum nihil, quas labore architecto? Quam.</p>
+    <!-- By default, the text is aligned at length. -->
+    <!-- The text is centered according to the width of its parent -->
+
+    <h1 id="td">Text Decoration</h1>
+
+    <a href="https://www.google.com">click me</a>
+
+    <!-- Font Weight - normal/bold/bolder/lighter/50px 
+ 100-900 (increments of 100)-->
+    <p style="font-weight: bold;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate delectus
+        perspiciatis iure ea perferendis magnam ducimus tenetur exercitationem, omnis reprehenderit? Maiores
+        quia ipsa vel unde totam eligendi iste amet quod!</p>
+
+    <!-- You can even change the CSS after running the server through the inspect  -->
+
+    <!-- Different types of fonts are rendered on the browser depending upon the browser. 
+ Mostly, Times New Roman is rendered. -->
+
+    <h1>Font Family</h1>
+
+    <!-- Generic Font Families: There are 5 different font families in CSS. They are Serif, Sans-Serif, Cursive, Fantasy, and Monospace. 
+    -->
+    <p style="font-family: 'Roboto', sans-serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+        delectus perspiciatis iure ea perferendis magnam ducimus tenetur exercitationem, omnis reprehenderit? Maiores
+        quia ipsa vel unde totam eligendi iste amet quod!</p>
+    <h1>Units in CSS </h1>
+    <!-- pixels :absolute unit  , em: relative unit, %: relative unit-->
+    <!-- 96px = 1 inch = 2.54cm , pixels is the smallest unit -->
+    <p id="one">para1</p>
+    <!-- You can check the default font size after inspecting and howering on 
+  that particular text. -->
+    <p id="two">para2</p>
+    <!-- Default font size is 16 pixels. -->
+
+     <div style="border: 2px solid black; width: 50%;">
+        hello
+     </div>
+    
+    
+     <p id="three" style="font-size: 25px;">para3</p>
+     <h1>Text properties</h1>
+<!--  text-transform: uppercase /lowercase /capitalize /none -->
+
+<!-- ## Practice Set 2 
+
+**Q1\:** Create a heading centred on the page with all of its text capitalized.
+
+**Q2\:** Set the font family of all the content in the document to "Times New Roman".
+
+**Q3\:** Create one div inside another div.
+
+- Set id & text "outer" for the first one & "inner" for the second one.
+- Set the outer div text size to 25px & inner div text size to 10px\. -->
+
+<!-- If some properties are set for the parent's div. Some other properties are even applied for the child's div. 
+But, this only happens for some properties. It does not happen for all the properties.
+-->
+<div id= 'outer' style="font-family: 'Roboto', sans-serif; font-size: 25px;">
+    outer
+    <div id = 'inner' style="font-family: 'Roboto', sans-serif; font-size: 10px;">inner</div>
+</div>
+</body>
+
+
+</html>

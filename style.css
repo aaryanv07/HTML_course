@@ -1,0 +1,52 @@
+/* This is widely used in organizations. */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    
+}
+h1 {
+    color: red;
+}
+
+p {
+    color: rgb(0,255,0);
+    text-align: right;
+    /* Currently, we are using CSS3, and in that, 
+    there are two more options left: is equal to start and right is equal to end. */
+}
+
+button {
+    background-color: yellow;
+    color: brown;
+}
+
+body{
+    /* background-color:grey ; */
+}
+
+#one{
+    color: green;
+
+}
+#two{
+    color:chocolate
+}
+
+.myClass{
+    color: bisque;
+}
+
+/* Group selectors */
+h1,h2,h3{
+    color: blueviolet;
+}
+
+#td{
+    text-decoration: underline;
+    /* the other options are underline and overline. */
+}
+

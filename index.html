@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS Practice Set 4</title>
+    <style>
+        /* #box1 {
+            position: static;
+        }
+
+        #box2 {
+            position: relative;
+            top: 20px;
+            left: 10px;
+        }
+
+        #box3 {
+            position: sticky;
+            top: 0px;
+            left: 20px;
+
+        }
+
+        #box4 {
+            position: fixed;
+            top: 0;
+        } */
+
+        div {
+            height: 1000px;
+            width: 1000px;
+        }
+
+        /* #box3 {
+            background-image: url('https://images.unsplash.com/photo-1529778873920-4da4926a72c2?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YW5pbWFsc3xlbnwwfHwwfHx8MA%3D%3D');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+
+
+        } */
+
+        body {
+            text-align: center;
+        }
+
+        div {
+            height: 200px;
+            width: 200px;
+            display: inline-block;
+            border: 2px solid black;
+        }
+
+        #container {
+            width: 800px;
+            height: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: flex-end;
+
+
+
+        }
+
+        #b1 {
+            background-color: aqua;
+        }
+
+        #b2 {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Position
+
+* static – default position. (top, right, bottom, left, and z-index properties have no effect)
+* relative – element is relative to itself. (top, right, bottom, left, and z-index will work)
+* absolute – positioned relative to its closest positioned ancestor. (removed from flow)
+* fixed – positioned relative to browser. (removed from flow)
+* sticky – positioned based on user’s scroll position -->
+
+    <!-- use position to control the element: top,bottom,left,right 
+ give in pixels, em, rem, vh, vw positive or negative values -->
+
+    <div id="box3" style="background-color: pink;">box3</div>
+    <h1 style="position: relative;">heading</h1>
+    <div id="box4" style="background-color: red;">box4</div>
+    <div id="box5" style="background-color: green;">box5</div>
+    <div id="box6"></div>
+    <!-- z-index
+It decides the stack level of elements.
+
+
+Overlapping elements with a larger z-index cover those with a smaller one.
+
+z-index: auto;   /* default */
+z-index: 1;
+z-index: 2;
+z-index: -1;
+z-index: -2;
+
+Note: Cannot be applied on static elements.
+
+Higher z-index → element appears more in front.
+Lower z-index → element appears more behind.
+
+bydefault the first written element comes in the below -->
+
+
+    <!-- Background Image
+
+Used to set an image as background.
+
+background-image: url("image.jpeg");
+use unsplash.com
+
+
+
+Background Size
+
+background-size: cover;
+background-size: contain;
+background-size: auto;
+
+* cover → fills the whole container, but some parts of the image may get cropped.
+* contain → shows the full image inside the container, but may leave empty space.
+* auto → keeps the image’s original size.
+ -->
+
+
+    <!-- Practice Set 5 🚀
+
+Q: Create the following layout using the given HTML.
+
+* Give the div a height, width & some background image.
+* Use the appropriate position property for the div element to place it at the right end of the page.
+* The div should not move even on scroll.
+
+<p>lorem*5</p>
+<div>Love Nature</div>
+<p>lorem*5</p>
+
+For this, the important CSS property is:
+
+position: fixed;
+right: 0;
+
+That keeps the div fixed at the right side even while the page scrolls. -->
+
+
+    <!-- Flexbox
+
+Flexible Box Layout
+
+It is a one-dimensional layout method for arranging items in rows or columns. 
+
+The Flex Model
+
+* Flex container → The parent element that contains the flex items.
+* Flex item → The child elements inside the flex container.
+* Main axis → The primary direction in which flex items are arranged.
+* Cross axis → The direction perpendicular to the main axis.
+
+By default:
+
+flex-direction: row;
+
+So the main axis is horizontal and the cross axis is vertical.
+-->
+
+    <h1>Flexbox playground</h1>
+    <div id="container">
+        <div id="b1">box1
+
+        </div>
+        <div id="box2">box2
+
+        </div>
+        <div id="b3">box3
+
+        </div>
+        <div id="b4">box4
+
+        </div>
+        <div id="b5" style="height: 10rem;">box5
+
+        </div>
+    </div>
+
+    <!-- Flexbox Direction
+
+It sets how flex items are placed inside the flex container, including the axis and direction.
+
+flex-direction: row;            /* default */
+flex-direction: row-reverse;
+flex-direction: column;
+flex-direction: column-reverse;
+
+* row → left to right
+* row-reverse → right to left
+* column → top to bottom
+* column-reverse → bottom to top
+
+Elements will try to take the maximum capacity of the parent container 
+but they will not exceed it even if they have higher dimensions.
+
+Flex Properties for Flex Container
+
+* justify-content: alignment along the main axis
+    * flex-start
+    * flex-end
+    * center
+    * space-evenly
+    * space-between
+    * space-around
+* flex-wrap
+    * nowrap : It will not go on a new line.
+    * wrap : It will go on a new line.
+    * wrap-reverse : It will go on a new line in the reverse order.
+* align-items: alignment along the cross axis
+* align-content: controls the spacing between multiple flex lines along the cross axis.-->
+
+<!-- Flex property
+ 
+Align Self - Flex item aligns for itself.
+Flex Grow - Flex item grows more than its siblings.
+Flex Shrink - Flex item shrinks more than its siblings.
+
+All these properties are only applied on flex items.
+
+-->
+</body>
+
+</html>

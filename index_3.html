@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #navbar {
+            background-color: #0f1111;
+            height: 60px;
+
+        }
+
+        button {
+            background-color: #f08804;
+        }
+
+        #logo {
+            color: #f08804;
+            font-size: 25px;
+        }
+
+        a {
+            margin-right: 80px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="navbar">
+        <a href="" id="logo">Amazon.in </a>
+        <a href="#">
+            Account</a>
+        <a href="#">Contact Us</a>
+
+        <input type="text" placeholder="Search Amazon.in">
+        <button>Search</button>
+    </div>
+
+    <!-- Display Flex -->
+    <!-- **Display Property**
+
+`display: inline / block / inline-block / none`
+
+- **inline** – Takes only the space required by the element. (no margin/ padding)
+- **block** – Takes full space available in width.
+- **inline-block** – Similar to inline but we can set margin & padding.
+- **none** – To remove element from document flow.
+
+**Correction:** Inline elements support horizontal
+ margins and padding. `inline-block` also allows setting width, height, and vertical margins. -->
+
+
+    <!-- Change the due display to inline. -->
+    <div style="background-color: #f08804; height: 100px; margin-top: 2vh; display: inline-block;">This is a div</div>
+
+    <!-- Change the due display to block. -->
+    <button style="display: block;">Click Me!</button>
+    <div style="background-color: blue; width: 100px; height: 100px; margin: 25px;padding: 25px;display: inline-block;">
+    </div>
+    <div
+        style="background-color: green; width: 100px; height: 100px; margin: 25px;padding: 25px;display: inline-block;">
+    </div>
+    <div style="background-color: red; width: 100px; height: 100px; margin: 25px;padding: 25px;display: inline-block;">
+    </div>
+    <div style="background-color: red; width: 100px; height: 100px; margin: 25px;padding: 25px;display: none;"></div>
+
+    <!-- Alpha Channel controls the opacity. Opacity 0 to 1 -->
+    <!-- RGBA 
+  color: rgba (255,0,0,0.5) -->
+
+
+    <!-- **Practice Set 4 🚀**
+
+**Q1:** Create a webpage layout with a header, a footer & a content area containing 3 divs.  
+Set the height & width of divs to 100px.  
+(Add the previous navbar in the header.)
+
+**Q2:** Add borders to all the divs.
+
+**Q3:** Add a different background color to each div with an opacity of 0.5.
+;
+**Q4:** Give the content area an appropriate height. -->
+    <p>&copy</p>
+
+    <!-- Relative units in CSS -->
+    <!-- %, em, rem, vh -->
+    <!-- Percentage: 
+ It is often used to define a size as related to an element's 
+ parent object. -->
+
+    <div id="box1" style="height: 100px;width: 100px;background-color: green; font-size: 10px;">
+        box1
+        <div id="box2" style="height: 50%;width:50%;background-color: yellow; font-size: 2em;">box2</div>
+    </div>
+<!-- EM
+   font size of the parent in case of typographical properties 
+ like font size and font size for element itself. 
+ In case other properties like width  em Over here will 
+ take reference from its own element.-->
+ 
+ <!-- REM 
+  REM (Root EM)  1 rem = 16 pixels -->
+  <!-- 
+  Vh and Vw:  1vh=1% of the view-port height, 1vw=1% of the view-port width  -->
+
+
+ 
+ </body>
+
+</html>
